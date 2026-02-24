@@ -1,0 +1,137 @@
+[
+{
+"rubric_id": "R01",
+"rubric_content": "代码必须实现物品市场价格查询功能，能够从OSRS官方或第三方API获取实时物品价格数据",
+"必要性": "Essential",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "动态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Explicit",
+"rationale": "物品价格查询是经济数据分析功能的核心需求，必须能够准确获取实时市场价格数据，这是明确的功能要求，需要通过实际运行验证"
+},
+{
+"rubric_id": "R02",
+"rubric_content": "代码必须实现历史价格趋势分析功能，能够存储和分析物品价格的历史数据",
+"必要性": "Essential",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "动态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Explicit",
+"rationale": "历史价格趋势分析是经济数据分析的重要组成部分，需要能够存储和分析历史价格数据，这是明确的功能要求，需要通过实际运行验证"
+},
+{
+"rubric_id": "R03",
+"rubric_content": "代码必须实现市场供需图表功能，能够可视化展示物品价格和供需关系",
+"必要性": "Essential",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "动态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Explicit",
+"rationale": "市场供需图表是经济数据分析的可视化需求，需要能够直观展示物品价格和供需关系，这是明确的功能要求，需要通过实际运行验证"
+},
+{
+"rubric_id": "R04",
+"rubric_content": "代码必须实现个性化投资推荐功能，基于价格趋势分析为用户提供投资建议",
+"必要性": "Important",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "动态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Explicit",
+"rationale": "个性化投资推荐是经济数据分析的高级功能，能够为用户提供有价值的投资建议，这是明确的功能要求，需要通过实际运行验证"
+},
+{
+"rubric_id": "R05",
+"rubric_content": "代码必须使用Python语言和Flask框架实现，与项目现有技术栈保持一致",
+"必要性": "Essential",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "项目现有的技术栈是Python和Flask框架，新功能必须与之保持一致，这是隐含的技术要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R06",
+"rubric_content": "代码必须遵循项目现有的目录结构，将后端逻辑放在backend目录，前端模板放在templates目录",
+"必要性": "Important",
+"评估维度": "风格（style）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "遵循项目现有的目录结构有助于保持代码的一致性和可维护性，这是隐含的风格要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R07",
+"rubric_content": "代码必须包含适当的错误处理机制，能够处理API请求失败、数据格式错误等异常情况",
+"必要性": "Essential",
+"评估维度": "鲁棒性（robustness）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "错误处理是保证功能稳定性的重要因素，特别是在处理外部API数据时，这是隐含的鲁棒性要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R08",
+"rubric_content": "代码必须包含适当的数据验证机制，确保输入的物品ID或名称格式正确",
+"必要性": "Important",
+"评估维度": "鲁棒性（robustness）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "数据验证有助于防止错误输入导致的功能异常，这是隐含的鲁棒性要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R09",
+"rubric_content": "代码必须实现适当的缓存机制，减少对外部API的请求频率，避免API限流",
+"必要性": "Important",
+"评估维度": "鲁棒性（robustness）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "缓存机制有助于提高功能性能并避免API限流，这是隐含的鲁棒性要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R10",
+"rubric_content": "代码必须包含详细的注释和文档，说明功能实现原理和使用方法",
+"必要性": "Important",
+"评估维度": "风格（style）",
+"验证方式": "静态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "详细的注释和文档有助于代码的理解和维护，这是隐含的风格要求，需要人工审查验证"
+},
+{
+"rubric_id": "R11",
+"rubric_content": "代码必须遵循Python的PEP 8编码规范，保持代码风格一致",
+"必要性": "Optional",
+"评估维度": "风格（style）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "遵循PEP 8编码规范有助于提高代码的可读性和一致性，这是可选的风格要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R12",
+"rubric_content": "前端模板必须使用Bootstrap框架，与项目现有的UI风格保持一致",
+"必要性": "Important",
+"评估维度": "风格（style）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "项目现有的前端使用Bootstrap框架，新功能的前端模板必须与之保持一致，这是隐含的风格要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R13",
+"rubric_content": "前端界面必须实现响应式设计，在不同设备上都能正常显示",
+"必要性": "Important",
+"评估维度": "功能要求（functional requirement）",
+"验证方式": "动态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "响应式设计有助于提高用户体验，确保功能在不同设备上都能正常使用，这是隐含的功能要求，需要通过实际运行验证"
+},
+{
+"rubric_id": "R14",
+"rubric_content": "代码必须实现适当的日志记录机制，记录关键操作和错误信息",
+"必要性": "Important",
+"评估维度": "鲁棒性（robustness）",
+"验证方式": "静态-模型验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "日志记录有助于问题排查和系统监控，这是隐含的鲁棒性要求，通过代码分析即可验证"
+},
+{
+"rubric_id": "R15",
+"rubric_content": "代码必须确保API密钥等敏感信息不被硬编码在源代码中，应使用环境变量或配置文件管理",
+"必要性": "Essential",
+"评估维度": "鲁棒性（robustness）",
+"验证方式": "静态-人工验证",
+"显性(Explicit)隐性（Implicit）": "Implicit",
+"rationale": "保护敏感信息是安全性的基本要求，避免硬编码API密钥等敏感信息，这是隐含的安全性要求，需要人工审查验证"
+}
+]
